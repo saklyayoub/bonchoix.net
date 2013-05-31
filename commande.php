@@ -73,7 +73,7 @@ if ($sql_4)
         </div>
     </div>
     
-    <div id="footer">
+    <div id="footer"><span>xx<span>
         <?php include('function/footer.php');?>
     </div>
 </body>

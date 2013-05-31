@@ -28,6 +28,7 @@
 <script type="text/javascript" src="function/lib/turn.js"></script>
 <div id="cat_under">
 
+	<div><span>Balha</span></div>
 <?php
 $query_affich_art_par_famill_client = mysql_query("SELECT * FROM article",$connection);
 while ($O = mysql_fetch_object($query_affich_art_par_famill_client))

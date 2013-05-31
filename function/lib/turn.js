@@ -53,7 +53,7 @@ var has3d,
 
 		// First page
 
-		page: 2,
+		page: 1,
 		
 		// Enables gradients
 
