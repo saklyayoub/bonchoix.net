@@ -8,7 +8,6 @@
 </head>
 <?php include('function/top_bar.php'); ?>
 <body>
-	<p>&nbsp;</p>
 	<?php include('function/social.php');?>
 	<div id="head">
 		<div id="head_container">

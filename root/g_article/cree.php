@@ -129,7 +129,7 @@ mysql_select_db($base_de_donnees, $connection) or die(mysql_error());
 		$fichier = $code_art.$extension;
 		//code upload images
 		if(move_uploaded_file($_FILES['img_art']['tmp_name'], $dossier . $fichier))
-		{echo '<script language="javascript">alert("Article : '.$code_art.' a ete cree")</script>';}
+		{echo '<script language="javascript">alert("Article : '.$code_art.' a ete creer")</script>';}
 		else{echo '<script language="javascript">alert("Echec de l\'upload d\'image d\'article !")</script>';}
 	}
 	else
