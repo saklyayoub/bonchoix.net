@@ -8,8 +8,7 @@
 #socialicons span{ font-size:30px; position:fixed; top:230px;}
 </style>
 <div id="socialicons">
-    <ul>
-    	<li><a href="#" target="new"><img border="0" src="style/img/social/mail.png" /></a></li>      
+    <ul>     
         <?php 
 		if ($m_facebook == '1'){echo'<li><a href="'.$page_fb.'" target="new"><img border="0" src="style/img/social/facebook.png" /></a></li>';}
 		if ($m_tweeter == '1'){echo'<li><a href="'.$page_tw.'" target="new"><img border="0" src="style/img/social/tweeter.png" /></a></li>';}

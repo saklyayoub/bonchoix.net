@@ -3,9 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo $nom_du_site ; ?></title>							<!-- récupération de nom de site de la base de donneés -->
-<link href="../../style/style.css" rel="stylesheet" type="text/css" />	<!-- Attachement de feille de style principal -->
-<script type="text/javascript" src="../../style/functions.js"></script>	<!-- Attachement de fonction de menue vertical -->
+<title><?php echo $nom_du_site ; ?></title>
+<link href="../../style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../style/functions.js"></script>
 </head>
 <body>
 <?php include('../../function/top_bar.php'); ?>
@@ -31,8 +31,6 @@
 <p> Veillez choisir les modules qui seront affichier dans le site</p>
 <form action="g_info_global_module_function.php" method="post">
 <table width="600px">
-<tr><td><input name="m_recherche" type="checkbox" value="1" <?php if ($m_recherche == '1') { echo ' checked="checked" '; } ?> onchange="this.form.submit()"/>Recherche</td></tr>
-<tr><td><input name="m_newsletter" type="checkbox" value="1" <?php if ($m_newsletter == '1') { echo ' checked="checked" '; } ?> onchange="this.form.submit()" />Newsletter</td></tr>
 <tr><td><input name="m_facebook" type="checkbox" value="1" <?php if ($m_facebook == '1') { echo ' checked="checked" '; } ?> onchange="this.form.submit()" />facebook</td></tr>
 <tr><td><input name="m_tweeter" type="checkbox" value="1" <?php if ($m_tweeter == '1') { echo ' checked="checked" '; } ?> onchange="this.form.submit()" />tweeter</td></tr>
 <tr><td><input name="m_youtube" type="checkbox" value="1" <?php if ($m_youtube == '1') { echo ' checked="checked" '; } ?> onchange="this.form.submit()" />youtube</td></tr>

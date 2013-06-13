@@ -1,11 +1,3 @@
-<?php
-/*if ($m_recherche == '1')
-{
-	echo'<div id="side_search" class="g_box">';
-	echo'<h3>Recherche Personnalisée?</h3>';
-	echo'</div>';
-}*/
-?>
 <script type="text/javascript" language="javascript">
 <?php
 $sql_1=mysql_query("SELECT * FROM famill_article", $connection);
