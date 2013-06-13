@@ -2,10 +2,10 @@
 -- version 3.3.9
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Jun 11, 2013 at 06:09 PM
--- Server version: 5.5.8
--- PHP Version: 5.3.5
+-- Serveur: localhost
+-- Généré le : Jeu 13 Juin 2013 à 22:44
+-- Version du serveur: 5.5.8
+-- Version de PHP: 5.3.5
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
@@ -16,13 +16,13 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `bonchoix`
+-- Base de données: `bonchoix`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Structure de la table `admin`
 --
 
 CREATE TABLE IF NOT EXISTS `admin` (
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `admin`
+-- Contenu de la table `admin`
 --
 
 INSERT INTO `admin` (`id_admin`, `login_admin`, `mdp_admin`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `admin` (`id_admin`, `login_admin`, `mdp_admin`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `article`
+-- Structure de la table `article`
 --
 
 CREATE TABLE IF NOT EXISTS `article` (
@@ -60,20 +60,19 @@ CREATE TABLE IF NOT EXISTS `article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `article`
+-- Contenu de la table `article`
 --
 
 INSERT INTO `article` (`code_art`, `design_courte_art`, `design_long_art`, `prix_art`, `code_sous_famill_art`, `code_famill_art`, `fav_art`) VALUES
 ('0001', 'ALLIANCE OR 375 JAUNE DIAMANT', 'ALLIANCE or 375, serti rail, 13 diamants total 5/100e de carat.', '360.999', '01', '002', 0),
-('0002', 'ALLIANCE DEMI-TOUR PLATINE 950 ', 'ElÃ©gante et raffinÃ©e cette alliance demi-tour en platine, met en lumiÃ¨re en serti griffes de magnifiques diamants de qualitÃ© tradition. Un cadeau unique Ã  offrir.', '2500.999', '01', '002', 1),
+('0002', 'ALLIANCE DEMI-TOUR PLATINE 950 ', 'ElÃ©gante et raffinÃ©e cette alliance demi-tour en platine, met en lumiÃ¨re en serti griffes de magnifiques diamants de qualitÃ© tradition. Un cadeau unique Ã  offrir.', '2500.999', '01', '002', 0),
 ('0004', 'ALLIANCE OR 375 BLANC DIAMANT', 'ALLIANCE or blanc 375. 14 diamants total 10/100e de carat.', '920.999', '01', '002', 0),
-('0005', 'ALLIANCE PALLADIUM 950 DIAMANT', 'ALLIANCE. Ruban en palladium. 3 diamants. Largeur 3,5 mm. ', '780.999', '01', '002', 0),
+('0005', 'ALLIANCE PALLADIUM 950 DIAMANT', 'ALLIANCE. Ruban en palladium. 3 diamants. Largeur 3,5 mm. ', '780.999', '01', '002', 1),
 ('0006', 'ALLIANCE OR 2 TONS 375', 'Avec sa forme ronde symbole de l''infinitÃ© de vos sentiments, votre anneau en Or vous accompagnera longtemps. Laissez-vous donc sÃ©duire par ce modÃ¨le en Or jaune et Or rhodiÃ©.', '270.999', '01', '002', 0),
 ('0007', 'ALLIANCE OR 750 BLANC', 'Cette alliance en or blanc diamantÃ© vous illuminera de l''Ã©clat unique crÃ©Ã© par ses facettes. Vous serez touchÃ© en plein coeur par ses 2 anneaux mobiles qui cÃ©lÃ¨breront Ã  merveille votre union.', '980.999', '01', '002', 0),
 ('0008', 'ALLIANCE DEMI-TOUR OR 750 JAUNE', 'ALLIANCE DIAMANTS demi-tour or 750, qualitÃ© SÃ©ductions, serti griffe, total  25/100e de carat.', '1450.999', '01', '002', 0),
 ('0009', 'ALLIANCE PLATINE 950 ET OR 750 ', 'Sobre et Ã©lÃ©gante, cette alliance marie avec talent l''or et le platine. Une association d''un Ã©clat incomparable pour que ce jour reste unique.', '1300.999', '01', '002', 0),
 ('0010', 'ALLIANCE OR 750 BLANC DUO DIAMA', 'Duo diamants. SOLITAIRE et ALLIANCE demi-tour en or blanc 750. 1 diamant 24/100e de carat, et 5 diamants total 10/100e, qualitÃ© SÃ©duction. ', '2800.999', '01', '002', 0),
-('0011', 'BAGUE ACIER CÃ‰RAMIQUE', 'BAGUE anneaux entrelacÃ©s en acier et cÃ©ramique facettÃ©e noire.', '150.999', '02', '002', 0),
 ('0012', 'BAGUE 2 ORS 375 DIAMANT', 'BAGUE en 2 ors 375 (or blanc, or rose). 6 diamants total 4/100e de carat.', '490.999', '02', '002', 0),
 ('0013', 'BAGUE OR 375 ROSE QUARTZ ROSE E', 'BAGUE en or rose 375. 1 quartz rose 2,80 carats, et 1 amÃ©thyste 50/100e de carat.', '540.999', '02', '002', 0),
 ('0014', 'LOT 3 BAGUES PLAQUÃ‰ OR ET ARGEN', 'LOT de 3 BAGUES plaquÃ© or et argent Ã  porter ensemble ou sÃ©parÃ©ment, motif coeur, fleur, Ã©toile.', '160.999', '02', '002', 0),
@@ -81,7 +80,6 @@ INSERT INTO `article` (`code_art`, `design_courte_art`, `design_long_art`, `prix
 ('0016', 'BAGUE PLAQUÃ‰ OR ROSE ZIRCONIA', 'BAGUE en plaquÃ© or rose rehaussÃ©e d''un motif coeur serti de zirconias. ', '90.999', '02', '002', 0),
 ('0017', 'BAGUE ARGENT 925 CÃ‰RAMIQUE DIAM', 'BAGUE ARGENT 925 CÃ‰RAMIQUE DIAMANT\r\nBAGUE composÃ©e de 3 anneaux en cÃ©ramique noire facettÃ©e reliÃ©s par une barrette sertie de 3 diamants.', '230.001', '02', '002', 0),
 ('0018', 'BAGUE OR 375 BLANC TOPAZE BLEUE', 'BAGUE en or blanc 375. 1 topaze bleue traitÃ©e 60/100e de carat, et cÃ©ramique noire. ', '340.001', '02', '002', 0),
-('00184', 'ca', 'cava', '154.36', '023', '001', 0),
 ('0019', 'BAGUE OR 750 JAUNE TOPAZE BLEUE', 'BAGUE or. 1 topaze bleue traitÃ©e 5 carats, briolette.', '1100.001', '02', '002', 0),
 ('0020', 'BOUCLES D''OREILLES ACIER CÃ‰RA', 'BOUCLES D''OREILLES ACIER CÃ‰RAMIQUE', '110.001', '03', '002', 0),
 ('0021', 'BOUCLES D''OREILLES ARGENT ZIRCO', 'Sertis de zirconias, ces clous d''oreilles en argent 925 prÃ©sentent un design Ã  la fois minimaliste et raffinÃ©. Un classique au charme indÃ©modable, Ã  porter en toutes occasions . ', '20.999', '03', '002', 0),
@@ -143,7 +141,6 @@ INSERT INTO `article` (`code_art`, `design_courte_art`, `design_long_art`, `prix
 ('0077', 'MONTRE FEMME BRACELET CUIR', 'Montre femme bracelet cuir.', '139.999', '08', '002', 0),
 ('0078', 'MONTRE FEMME BRACELET CHROMÃ‰', 'Montre femme bracelet chromÃ©.', '170.999', '08', '002', 0),
 ('0079', 'MONTRE FEMME BRACELET CUIR', 'Montre femme bracelet cuir.', '140.999', '08', '002', 0),
-('0080', ' ALLIANCE OR 375 JAUNE', 'ALLIANCE or 375. ', '160.001', '01', '002', 0),
 ('0081', 'ALLIANCE OR 750 BLANC', 'Une ligne Ã©purÃ©e pour aller Ã  l''essentiel...cette alliance ruban en or blanc vous offre des proportions idÃ©ales pour symboliser votre union en toute Ã©lÃ©gance. ', '459.999', '09', '003', 0),
 ('0082', 'ALLIANCE OR 750 JAUNE', 'Une ligne Ã©purÃ©e pour aller Ã  l''essentiel...cette alliance ruban en or jaune symbolisera Ã  merveille votre union exceptionnelle.', '485.999', '09', '003', 0),
 ('0083', 'ALLIANCE PALLADIUM 950', 'ALLIANCE. Ruban brossÃ© en palladium.', '599.999', '09', '003', 0),
@@ -153,13 +150,12 @@ INSERT INTO `article` (`code_art`, `design_courte_art`, `design_long_art`, `prix
 ('0087', 'ALLIANCE OR 750 JAUNE', 'Une ligne Ã©purÃ©e pour aller Ã  l''essentiel...cette large alliance ruban en or jaune symbolisera Ã  merveille votre union exceptionnelle.', '549.999', '09', '003', 0),
 ('0088', 'ALLIANCE OR 375 JAUNE', 'ALLIANCE OR 375 JAUNE', '359.999', '09', '003', 0),
 ('0089', 'ALLIANCE 3 ORS 750', 'Avec sa forme ronde symbole de l''infinitÃ© de vos sentiments, votre anneau en Or vous accompagnera longtemps. ', '1799.999', '09', '003', 0),
-('090', 'ALLIANCE OR 750 BLANC', 'Jeu de nuances et de reliefs, cette alliance vous offre un dialogue tout en lumiÃ¨re entre 2 ors.', '1299.999', '09', '003', 0),
-('12', '0000', '0000', '0000', '04', '002', 0);
+('090', 'ALLIANCE OR 750 BLANC', 'Jeu de nuances et de reliefs, cette alliance vous offre un dialogue tout en lumiÃ¨re entre 2 ors.', '1299.999', '09', '003', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `client`
+-- Structure de la table `client`
 --
 
 CREATE TABLE IF NOT EXISTS `client` (
@@ -171,18 +167,19 @@ CREATE TABLE IF NOT EXISTS `client` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `client`
+-- Contenu de la table `client`
 --
 
 INSERT INTO `client` (`email_clt`, `nom_clt`, `prenom_clt`, `mdp_clt`) VALUES
-('amine@yahoo.fr', 'amine', 'slama', '22805020'),
-('farah@yahoo.fr', 'farah', 'ben salem', '22805020'),
-('saklyayoub@live.com', 'ayoub', 'sakly', '0000');
+('amine@live.com', 'amine', 'amine', '0000'),
+('med@live.com', 'Med Hedi', 'Maghraoui', '0000'),
+('saklyayoub@live.com', 'Sakly', 'Ayoub', '20666996'),
+('saklyyakoub@live.com', 'Sakly', 'Yakoub', '0000');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `commande`
+-- Structure de la table `commande`
 --
 
 CREATE TABLE IF NOT EXISTS `commande` (
@@ -198,18 +195,18 @@ CREATE TABLE IF NOT EXISTS `commande` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `commande`
+-- Contenu de la table `commande`
 --
 
 INSERT INTO `commande` (`id_cmd`, `email_clt`, `date_cmd`, `tel_contact_cmd`, `adresslivrison_cmd`, `montant_cmd`, `etats`) VALUES
-('201306031157', 'amine@yahoo.fr', '2013/06/03-11:57', '22805020', 'ARIANA', '940.997', 'facturer'),
-('201306031656', 'farah@yahoo.fr', '2013/06/03-16:56', '9855555555', 'ariana', '470.999', 'facturer'),
-('201306070858', 'saklyayoub@live.com', '2013/06/07-08:58', '20666996', 'tunis', '2781.999', 'facturer');
+('201306022257', 'saklyayoub@live.com', '2013/06/02-22:57', '20666996', 'tuins', '2541.998', 'annuler'),
+('201306081126', 'saklyayoub@live.com', '2013/06/08-11:26', '20666996', 'tunis', '1251.999', 'facturer'),
+('201306101551', 'saklyayoub@live.com', '2013/06/10-15:51', '20666996', 'tunis\r\n', '1341.997', 'facturer');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `commande_article`
+-- Structure de la table `commande_article`
 --
 
 CREATE TABLE IF NOT EXISTS `commande_article` (
@@ -220,24 +217,25 @@ CREATE TABLE IF NOT EXISTS `commande_article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `commande_article`
+-- Contenu de la table `commande_article`
 --
 
 INSERT INTO `commande_article` (`id_cmd`, `code_art`) VALUES
-('201306031157', '0001'),
-('201306031157', '0041'),
-('201306031157', '0062'),
-('201306031656', '0011'),
-('201306031656', '0031'),
-('201306031656', '0062'),
-('201306070858', '0002'),
-('201306070858', '0017'),
-('201306070858', '0067');
+('201306022257', '0005'),
+('201306022257', '0053'),
+('201306022257', '0025'),
+('201306022257', '0008'),
+('201306081126', '0001'),
+('201306081126', '0025'),
+('201306081126', '0005'),
+('201306101551', '0001'),
+('201306101551', '0005'),
+('201306101551', '0053');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contacteznous`
+-- Structure de la table `contacteznous`
 --
 
 CREATE TABLE IF NOT EXISTS `contacteznous` (
@@ -252,16 +250,16 @@ CREATE TABLE IF NOT EXISTS `contacteznous` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `contacteznous`
+-- Contenu de la table `contacteznous`
 --
 
 INSERT INTO `contacteznous` (`id_cn`, `email_cn`, `sujet_cn`, `message_cn`, `date_cn`, `lu_cn`, `repondu_cn`) VALUES
-(1, 'ytcytcf@live.com', 'jytfjfjghf', 'jcjgcjhgcjghcjg', '', 0, 0);
+(1, 'ygvyhv@live.com', 'hgvkghv', 'khgvkghv\r\n', '', 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `famill_article`
+-- Structure de la table `famill_article`
 --
 
 CREATE TABLE IF NOT EXISTS `famill_article` (
@@ -271,7 +269,7 @@ CREATE TABLE IF NOT EXISTS `famill_article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `famill_article`
+-- Contenu de la table `famill_article`
 --
 
 INSERT INTO `famill_article` (`code_famill_art`, `nom_famill_art`) VALUES
@@ -283,7 +281,7 @@ INSERT INTO `famill_article` (`code_famill_art`, `nom_famill_art`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `info`
+-- Structure de la table `info`
 --
 
 CREATE TABLE IF NOT EXISTS `info` (
@@ -306,16 +304,16 @@ CREATE TABLE IF NOT EXISTS `info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `info`
+-- Contenu de la table `info`
 --
 
 INSERT INTO `info` (`id`, `nom_du_site`, `page_facebook`, `page_tweeter`, `page_youtube`, `description`, `adresse`, `tel`, `text_recherche`, `m_recherche`, `m_newsletter`, `m_facebook`, `m_tweeter`, `m_youtube`, `x_gmaps`, `y_gmaps`) VALUES
-(1, 'Luxe', 'https://www.facebook.com/guidebijouxx', '#', '#', 'Guide Bijoux vous invite Ã  dÃ©couvrir sa bijouterie en ligne spÃ©cialisÃ©e dans les bijoux et montres pour femme, homme et enfant. Notre bijouterie en ligne ne propose que des bijoux d''excellence sÃ©lectionnÃ©s parmi les marques les plus prestigieuses que l''on ne prÃ©sente plus. Parce qu''il existe un bijou pour tous les membres de la famille.<br>La bijouterie en ligne Le bon choix vous offre Ã©galement de nombreux conseils pour bien choisir vos bijoux pour tous les Ã©vÃ©nements de la vie : mariage, fianÃ§ailles, fÃªtes de NoÃ«l ou simple cadeau. <br>Tous nos clients bÃ©nÃ©ficient d''une garantie satisfait ou remboursÃ©" afin d''acheter en toute sÃ©rÃ©nitÃ©.', '23 Rue de Carthage', '00 216 22 805 020/00 216 20 666 996', 'nomdusite@mail.com', 1, 1, 1, 1, 1, 36.81592, 10.177149);
+(1, 'Luxe', 'https://www.facebook.com/guidebijouxx', '#', '#', 'Guide Bijoux vous invite Ã  dÃ©couvrir sa bijouterie en ligne spÃ©cialisÃ©e dans les bijoux et montres pour femme, homme et enfant. Notre bijouterie en ligne ne propose que des bijoux d''excellence sÃ©lectionnÃ©s parmi les marques les plus prestigieuses que l''on ne prÃ©sente plus. Parce qu''il existe un bijou pour tous les membres de la famille.<br>La bijouterie en ligne Le bon choix vous offre Ã©galement de nombreux conseils pour bien choisir vos bijoux pour tous les Ã©vÃ©nements de la vie : mariage, fianÃ§ailles, fÃªtes de NoÃ«l ou simple cadeau. <br>Tous nos clients bÃ©nÃ©ficient d''une garantie satisfait ou remboursÃ©" afin d''acheter en toute sÃ©rÃ©nitÃ©.', '23 Rue de Carthage', '00 216 22 805 020/00 216 20 666 996', 'nomdusite@mail.com', 0, 0, 1, 1, 1, 36.81592, 10.177149);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jquery`
+-- Structure de la table `jquery`
 --
 
 CREATE TABLE IF NOT EXISTS `jquery` (
@@ -326,7 +324,7 @@ CREATE TABLE IF NOT EXISTS `jquery` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `jquery`
+-- Contenu de la table `jquery`
 --
 
 INSERT INTO `jquery` (`id_jqy`, `titre_jqy`, `text_jqy`) VALUES
@@ -339,7 +337,7 @@ INSERT INTO `jquery` (`id_jqy`, `titre_jqy`, `text_jqy`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `newsletter`
+-- Structure de la table `newsletter`
 --
 
 CREATE TABLE IF NOT EXISTS `newsletter` (
@@ -349,18 +347,19 @@ CREATE TABLE IF NOT EXISTS `newsletter` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `newsletter`
+-- Contenu de la table `newsletter`
 --
 
 INSERT INTO `newsletter` (`email_nl`, `date_inscrip_nl`) VALUES
-('amine@yahoo.fr', '20130603-1156'),
-('farah@yahoo.fr', '20130603-1655'),
-('saklyayoub@live.com', '20130607-0855');
+('amine@live.com', '20130613-2234'),
+('med@live.com', '20130613-2233'),
+('saklyayoub@live.com', '20130602-2243'),
+('saklyyakoub@live.com', '20130613-2233');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sous_famill_article`
+-- Structure de la table `sous_famill_article`
 --
 
 CREATE TABLE IF NOT EXISTS `sous_famill_article` (
@@ -372,7 +371,7 @@ CREATE TABLE IF NOT EXISTS `sous_famill_article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `sous_famill_article`
+-- Contenu de la table `sous_famill_article`
 --
 
 INSERT INTO `sous_famill_article` (`code_sous_famill_art`, `nom_sous_famill_art`, `code_famill_art`) VALUES
@@ -402,31 +401,31 @@ INSERT INTO `sous_famill_article` (`code_sous_famill_art`, `nom_sous_famill_art`
 ('09', 'Alliances', '003');
 
 --
--- Constraints for dumped tables
+-- Contraintes pour les tables exportées
 --
 
 --
--- Constraints for table `article`
+-- Contraintes pour la table `article`
 --
 ALTER TABLE `article`
   ADD CONSTRAINT `article_ibfk_1` FOREIGN KEY (`code_sous_famill_art`) REFERENCES `sous_famill_article` (`code_sous_famill_art`),
   ADD CONSTRAINT `article_ibfk_2` FOREIGN KEY (`code_famill_art`) REFERENCES `sous_famill_article` (`code_famill_art`);
 
 --
--- Constraints for table `commande`
+-- Contraintes pour la table `commande`
 --
 ALTER TABLE `commande`
   ADD CONSTRAINT `commande_ibfk_1` FOREIGN KEY (`email_clt`) REFERENCES `client` (`email_clt`);
 
 --
--- Constraints for table `commande_article`
+-- Contraintes pour la table `commande_article`
 --
 ALTER TABLE `commande_article`
   ADD CONSTRAINT `commande_article_ibfk_1` FOREIGN KEY (`id_cmd`) REFERENCES `commande` (`id_cmd`),
   ADD CONSTRAINT `commande_article_ibfk_2` FOREIGN KEY (`code_art`) REFERENCES `article` (`code_art`);
 
 --
--- Constraints for table `sous_famill_article`
+-- Contraintes pour la table `sous_famill_article`
 --
 ALTER TABLE `sous_famill_article`
   ADD CONSTRAINT `sous_famill_article_ibfk_5` FOREIGN KEY (`code_famill_art`) REFERENCES `famill_article` (`code_famill_art`);
