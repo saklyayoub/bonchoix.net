@@ -1,9 +1,1 @@
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-like-box" id="fb" data-href="<?php echo $page_fb;?>?notif_t=fbpage_fan_invite" data-width="250" data-height="320" data-show-faces="true" data-stream="false" data-header="false"></div>
+<iframe id="fb" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fguidebijouxx&amp;width=250&amp;height=320&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=false&amp;appId=196022440461124" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:320px;" allowTransparency="true"></iframe>
