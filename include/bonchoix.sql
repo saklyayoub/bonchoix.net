@@ -2,10 +2,10 @@
 -- version 3.3.9
 -- http://www.phpmyadmin.net
 --
--- Serveur: localhost
--- Généré le : Jeu 13 Juin 2013 à 22:44
--- Version du serveur: 5.5.8
--- Version de PHP: 5.3.5
+-- Host: localhost
+-- Generation Time: Jun 14, 2013 at 12:54 AM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
@@ -16,13 +16,13 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données: `bonchoix`
+-- Database: `bonchoix`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE IF NOT EXISTS `admin` (
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Contenu de la table `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id_admin`, `login_admin`, `mdp_admin`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `admin` (`id_admin`, `login_admin`, `mdp_admin`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `article`
+-- Table structure for table `article`
 --
 
 CREATE TABLE IF NOT EXISTS `article` (
@@ -60,14 +60,14 @@ CREATE TABLE IF NOT EXISTS `article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `article`
+-- Dumping data for table `article`
 --
 
 INSERT INTO `article` (`code_art`, `design_courte_art`, `design_long_art`, `prix_art`, `code_sous_famill_art`, `code_famill_art`, `fav_art`) VALUES
 ('0001', 'ALLIANCE OR 375 JAUNE DIAMANT', 'ALLIANCE or 375, serti rail, 13 diamants total 5/100e de carat.', '360.999', '01', '002', 0),
 ('0002', 'ALLIANCE DEMI-TOUR PLATINE 950 ', 'ElÃ©gante et raffinÃ©e cette alliance demi-tour en platine, met en lumiÃ¨re en serti griffes de magnifiques diamants de qualitÃ© tradition. Un cadeau unique Ã  offrir.', '2500.999', '01', '002', 0),
 ('0004', 'ALLIANCE OR 375 BLANC DIAMANT', 'ALLIANCE or blanc 375. 14 diamants total 10/100e de carat.', '920.999', '01', '002', 0),
-('0005', 'ALLIANCE PALLADIUM 950 DIAMANT', 'ALLIANCE. Ruban en palladium. 3 diamants. Largeur 3,5 mm. ', '780.999', '01', '002', 1),
+('0005', 'ALLIANCE PALLADIUM ', 'ALLIANCE. Ruban en palladium. 3 diamants. ', '780.999', '01', '002', 1),
 ('0006', 'ALLIANCE OR 2 TONS 375', 'Avec sa forme ronde symbole de l''infinitÃ© de vos sentiments, votre anneau en Or vous accompagnera longtemps. Laissez-vous donc sÃ©duire par ce modÃ¨le en Or jaune et Or rhodiÃ©.', '270.999', '01', '002', 0),
 ('0007', 'ALLIANCE OR 750 BLANC', 'Cette alliance en or blanc diamantÃ© vous illuminera de l''Ã©clat unique crÃ©Ã© par ses facettes. Vous serez touchÃ© en plein coeur par ses 2 anneaux mobiles qui cÃ©lÃ¨breront Ã  merveille votre union.', '980.999', '01', '002', 0),
 ('0008', 'ALLIANCE DEMI-TOUR OR 750 JAUNE', 'ALLIANCE DIAMANTS demi-tour or 750, qualitÃ© SÃ©ductions, serti griffe, total  25/100e de carat.', '1450.999', '01', '002', 0),
@@ -150,12 +150,55 @@ INSERT INTO `article` (`code_art`, `design_courte_art`, `design_long_art`, `prix
 ('0087', 'ALLIANCE OR 750 JAUNE', 'Une ligne Ã©purÃ©e pour aller Ã  l''essentiel...cette large alliance ruban en or jaune symbolisera Ã  merveille votre union exceptionnelle.', '549.999', '09', '003', 0),
 ('0088', 'ALLIANCE OR 375 JAUNE', 'ALLIANCE OR 375 JAUNE', '359.999', '09', '003', 0),
 ('0089', 'ALLIANCE 3 ORS 750', 'Avec sa forme ronde symbole de l''infinitÃ© de vos sentiments, votre anneau en Or vous accompagnera longtemps. ', '1799.999', '09', '003', 0),
+('0091', 'BAGUE ACIER ET OR 750', 'BAGUE composÃ©e d''un motif cÃ¢ble en acier et de 3 vis en or 750. ', '90.999', '010', '003', 0),
+('0092', 'BAGUE 2 ORS 750 DIAMANT', 'BAGUE en 2 ors 750 (or jaune, or blanc) massive, rehaussÃ©e d''un diamant de 3/100e de carat.', '2200.999', '010', '003', 0),
+('0093', 'CHEVALIÃˆRE OR 750 JAUNE ONYX', 'CHEVALIERE composÃ©e d''un Ã©cusson ovale en onyx sur jonc en or 750 poli. ', '1600.999', '010', '003', 0),
+('0094', 'BRACELET ACIER CUIR NOIR', 'BRACELET cuir noir tressÃ©.\r\nFermoir acier. ', '80.999', '011', '003', 0),
+('0095', 'BRACELET ACIER CARBONE', 'Bracelet acier carbone. Largeur de maille : 8 mm.\r\n', '130.999', '011', '003', 0),
+('0096', 'BRACELET ACIER', 'BRACELET en acier poli agrÃ©mentÃ© d''un motif lÃ©zard sur une plaque en acier laquÃ© noir. Longueur 20 cm.\r\n', '169.999', '011', '003', 0),
+('0097', 'GOURMETTE ARGENT 925 PERSONNALI', 'IDENTITE en argent 925 maille marine. \r\nFermoir mousqueton. \r\n', '250.999', '012', '003', 0),
+('0098', 'GOURMETTE PLAQUÃ‰ OR PERSONNALIS', 'Gourmette plaquÃ© or personnalisable. Largeur : 8 mm.\r\n', '229.999', '012', '003', 0),
+('0099', 'GOURMETTE ARGENT 925 PERSONNALI', 'Gourmette argent 925 personnalisable. Largeur de maille : 8 mm.\r\n', '215.999', '012', '003', 0),
+('0100', 'PENDENTIF PERSONNALISABLE ARGEN', 'PENDENTIF en argent 925, plaque "GI".  Hauteur : 4,7 cm, largeur : 2 cm.\r\n', '139.999', '013', '003', 0),
+('0101', 'PENDENTIF ALLAH OR 750 JAUNE', 'PENDENTIF Allah en or jaune 750. Hauteur : 2,7 cm, diamÃ¨tre : 1,7 cm.\r\n', '429.999', '013', '003', 0),
+('0102', 'PENDENTIF ZODIAQUE OR 750 JAUNE', 'PENDENTIF signe du zodiaque en or jaune 750. Sagittaire.', '449.999', '013', '003', 0),
+('0103', 'MONTRE HOMME DOUBLE AFFICHAGE', 'MONTRE et bracelet acier. Cadran bleu avec double affichage. ', '199.999', '014', '003', 0),
+('0104', 'MONTRE HOMME AUTOMATIQUE ', 'MONTRE automatique acier, compteur 24H jour/nuit. ', '499.999', '014', '003', 0),
+('0105', 'MONTRE HOMME BICOLORE', 'MONTRE acier bicolore, cadran blanc avec guichet date. ', '185.999', '014', '003', 0),
+('0106', 'GOURMETTE ARGENT ', 'IDENTITE en argent 925 composÃ©e d''une maille alternÃ©e et d''une plaque rehaussÃ©e d''un coeur rouge laquÃ©. ', '89.999', '015', '004', 0),
+('0107', 'GOURMETTE PERSONNALISABLE OR', 'Avec sa jolie plaque en forme de parchemin, cette jolie gourmette en or Ã  maille alternÃ©e est un cadeau rÃ©ussi pour fÃªter une naissance ou un baptÃªme. ', '249.999', '015', '004', 0),
+('0108', 'GOURMETTE OR 750 ', 'IDENTITE ENFANT en or jaune 750, maille fantaisie, plaque or poli rehaussÃ©e de 2 coccinelles laquÃ©es. ', '495.999', '015', '004', 0),
+('0109', 'PENDENTIF OR 375 JAUNE ZIRCONIA', 'Largeur : 9 mm, hauteur avec bÃ©liÃ¨re : 12 mm.\r\n', '82.999', '016', '004', 0),
+('0110', 'PENDENTIF PLAQUÃ‰ OR LAQUE', 'PENDENTIF en plaquÃ© or, motif ourson rehaussÃ© de laque multicolore. Hauteur : 1,9 cm, largeur :1 cm.\r\n', '79.999', '016', '004', 0),
+('0111', 'PENDENTIF OR 375 JAUNE Ã‰MAIL', 'Pendentif or 375 jaune Ã©mail. Largeur : 8 mm, hauteur avec bÃ©liÃ¨re : 14 mm.\r\n', '99.999', '016', '004', 0),
+('0112', 'BRACELET ARGENT 925 Ã‰LASTIQUE', 'Bracelet argent 925 Ã©lastique. DiamÃ¨tre du disque : 15 mm.\r\n', '49.999', '017', '004', 0),
+('0113', 'BRACELET ARGENT 925 CAOUTCHOUC ', 'Craquez pour le joli motif fantaisie en argent de ce bracelet en caoutchouc. Un esprit rebelle et masculin assurÃ©. Longueur : 18 cm, largeur : 7 mm.\r\n', '99.999', '017', '004', 0),
+('0114', 'BRACELET ARGENT 925 LAQUE PIERR', 'Bracelet argent 925 laque pierre imitation. Motif : largeur : 34 mm, hauteur : 5 mm.\r\n', '49.999', '017', '004', 0),
+('0115', 'BOUCLES D''OREILLES OR 375 JAUNE', 'Boucles d''oreilles or 375 jaune laque. Hauteur : 7 mm, largeur : 6 mm.\r\n', '176.999', '018', '004', 0),
+('0116', 'BOUCLES D''OREILLES OR 375 JAUNE', 'Boucles d''oreilles or 375 jaune zirconia. Hauteur : 12 mm, largeur : 9 mm.\r\n', '139.999', '018', '004', 0),
+('0117', 'BOUCLES D''OREILLES OR 375 JAUNE', 'Boucles d''oreilles or 375 jaune zirconia. DiamÃ¨tre : 5 mm.\r\n', '99.999', '018', '004', 0),
+('0118', 'BAGUE ARGENT 925 ZIRCONIA', 'BAGUE en argent 925 coeur ajourÃ© serti d''un zirconia. \r\n', '69.999', '019', '004', 0),
+('0120', 'BAGUE ARGENT 925 ZIRCONIA', 'BAGUE Ã©toile sertie de zirconias. T. 46 Ã  56.\r\n', '47.999', '019', '004', 0),
+('0121', 'COLLIER ARGENT Ã‰MAIL 38 CM', 'Collier argent Ã©mail 38 cm. Hauteur du pendant : 20 mm, largeur : 12 mm.\r\n', '89.999', '020', '004', 0),
+('0122', 'COLLIER ARGENT 925', 'Collier argent 925. Hauteur du pendant : 29 mm, largeur : 8 mm.\r\n', '70.999', '020', '004', 0),
+('0123', 'COLLIER ARGENT 925 Ã‰MAIL', 'Collier argent 925 Ã©mail. Hauteur du pendant : 18 mm, largeur : 10 mm.\r\n', '82.999', '020', '004', 0),
+('0124', 'MONTRE ADOLESCENT ', 'MONTRE affichage numÃ©rique. BoÃ®tier et bracelet PVC noir et blanc. Verre plexi. Etanche 3 bars. Affiche en permanence : heure, minute, seconde, jour et date. Par simple pression : chrono au 1/100Ã¨me, compte Ã  rebours, alarme et lumiÃ¨re.  \r\n', '99.999', '021', '004', 0),
+('0125', 'MONTRE ENFANT BRACELET CUIR', 'Craquez pour les jolies inscriptions du bracelet cuir bleu et blanc de cette montre enfant en aluminium. Son cadran pÃ©dagogique bleu et blanc lui apporte un style trÃ¨s mode. Largeur totale : 29 mm.\r\n', '199.999', '021', '004', 0),
+('0126', 'MONTRE ADOLESCENT BRACELET PVC ', 'MONTRE et bracelet en PVC rose, lunette chromÃ©e, cadran rehaussÃ© de coeurs illuminÃ©s par simple pression. \r\n', '109.999', '021', '004', 0),
+('0127', 'TIRELIRE OURS MÃ‰TAL BLANCHI ARG', 'TIRELIRE ours en mÃ©tal blanchi d''argent. Haut. 13 cm. \r\n', '99.999', '022', '004', 0),
+('0128', 'TIRELIRE CHAUSSON MÃ‰TAL BLANCHI', 'TIRELIRE chausson livrÃ© avec 2 rubans (1 rose, 1 bleu). \r\n', '69.999', '022', '004', 0),
+('0129', 'BOITE "PREMIÃˆRE DENT" EN MÃ‰TAL ', 'BOITE 1Ã¨re DENT en mÃ©tal blanchi d''argent. Couvercle perlÃ© avec motif souris, intÃ©rieur en feutrine. Dim. 6 x 2,5 cm.\r\n', '48.999', '022', '004', 0),
+('0130', 'BAGUE ARGENT 925', 'BAGUE rehaussÃ©e d''un motif trÃ¨fle. T. 46 Ã  56.\r\n', '89.999', '019', '004', 0),
+('0131', 'COFFRET BIJOUX CUIR IMITATION ', 'COFFRET Ã  BIJOUX imitation cuir bordeaux, intÃ©rieur faÃ§on velour beige. Astucieux! Ouverture simultanÃ©e du couvercle et du tiroir. Nombreux emplacements pour bijouterie diverse dont un qui permet de ranger une boÃ®te de voyage.', '150.999', '024', '001', 0),
+('0132', 'PIERCING DE NEZ OR', 'PIERCING de nez en or jaune 750, motif serpent. Largeur : 7 mm, hauteur : 6 mm.\r\n', '89.999', '024', '001', 0),
+('0133', 'PORTE CLÃ‰S ACIER', 'Porte clÃ©s acier. Largeur : 33 mm, hauteur avec boucle : 82 mm.\r\n', '99.999', '023', '001', 0),
+('0134', 'CLOU OR 750 JAUNE ZIRCONIA', 'BOUCLE D''OREILLE : clou zirconia, diam. 3 mm, serti sur or jaune 750, vendu Ã  l''unitÃ©.\r\n', '90.999', '023', '001', 0),
 ('090', 'ALLIANCE OR 750 BLANC', 'Jeu de nuances et de reliefs, cette alliance vous offre un dialogue tout en lumiÃ¨re entre 2 ors.', '1299.999', '09', '003', 0);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `client`
+-- Table structure for table `client`
 --
 
 CREATE TABLE IF NOT EXISTS `client` (
@@ -167,7 +210,7 @@ CREATE TABLE IF NOT EXISTS `client` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `client`
+-- Dumping data for table `client`
 --
 
 INSERT INTO `client` (`email_clt`, `nom_clt`, `prenom_clt`, `mdp_clt`) VALUES
@@ -179,7 +222,7 @@ INSERT INTO `client` (`email_clt`, `nom_clt`, `prenom_clt`, `mdp_clt`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `commande`
+-- Table structure for table `commande`
 --
 
 CREATE TABLE IF NOT EXISTS `commande` (
@@ -195,7 +238,7 @@ CREATE TABLE IF NOT EXISTS `commande` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `commande`
+-- Dumping data for table `commande`
 --
 
 INSERT INTO `commande` (`id_cmd`, `email_clt`, `date_cmd`, `tel_contact_cmd`, `adresslivrison_cmd`, `montant_cmd`, `etats`) VALUES
@@ -206,7 +249,7 @@ INSERT INTO `commande` (`id_cmd`, `email_clt`, `date_cmd`, `tel_contact_cmd`, `a
 -- --------------------------------------------------------
 
 --
--- Structure de la table `commande_article`
+-- Table structure for table `commande_article`
 --
 
 CREATE TABLE IF NOT EXISTS `commande_article` (
@@ -217,7 +260,7 @@ CREATE TABLE IF NOT EXISTS `commande_article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `commande_article`
+-- Dumping data for table `commande_article`
 --
 
 INSERT INTO `commande_article` (`id_cmd`, `code_art`) VALUES
@@ -235,7 +278,7 @@ INSERT INTO `commande_article` (`id_cmd`, `code_art`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `contacteznous`
+-- Table structure for table `contacteznous`
 --
 
 CREATE TABLE IF NOT EXISTS `contacteznous` (
@@ -250,7 +293,7 @@ CREATE TABLE IF NOT EXISTS `contacteznous` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Contenu de la table `contacteznous`
+-- Dumping data for table `contacteznous`
 --
 
 INSERT INTO `contacteznous` (`id_cn`, `email_cn`, `sujet_cn`, `message_cn`, `date_cn`, `lu_cn`, `repondu_cn`) VALUES
@@ -259,7 +302,7 @@ INSERT INTO `contacteznous` (`id_cn`, `email_cn`, `sujet_cn`, `message_cn`, `dat
 -- --------------------------------------------------------
 
 --
--- Structure de la table `famill_article`
+-- Table structure for table `famill_article`
 --
 
 CREATE TABLE IF NOT EXISTS `famill_article` (
@@ -269,7 +312,7 @@ CREATE TABLE IF NOT EXISTS `famill_article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `famill_article`
+-- Dumping data for table `famill_article`
 --
 
 INSERT INTO `famill_article` (`code_famill_art`, `nom_famill_art`) VALUES
@@ -281,7 +324,7 @@ INSERT INTO `famill_article` (`code_famill_art`, `nom_famill_art`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `info`
+-- Table structure for table `info`
 --
 
 CREATE TABLE IF NOT EXISTS `info` (
@@ -304,7 +347,7 @@ CREATE TABLE IF NOT EXISTS `info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `info`
+-- Dumping data for table `info`
 --
 
 INSERT INTO `info` (`id`, `nom_du_site`, `page_facebook`, `page_tweeter`, `page_youtube`, `description`, `adresse`, `tel`, `text_recherche`, `m_recherche`, `m_newsletter`, `m_facebook`, `m_tweeter`, `m_youtube`, `x_gmaps`, `y_gmaps`) VALUES
@@ -313,7 +356,7 @@ INSERT INTO `info` (`id`, `nom_du_site`, `page_facebook`, `page_tweeter`, `page_
 -- --------------------------------------------------------
 
 --
--- Structure de la table `jquery`
+-- Table structure for table `jquery`
 --
 
 CREATE TABLE IF NOT EXISTS `jquery` (
@@ -324,7 +367,7 @@ CREATE TABLE IF NOT EXISTS `jquery` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `jquery`
+-- Dumping data for table `jquery`
 --
 
 INSERT INTO `jquery` (`id_jqy`, `titre_jqy`, `text_jqy`) VALUES
@@ -337,7 +380,7 @@ INSERT INTO `jquery` (`id_jqy`, `titre_jqy`, `text_jqy`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `newsletter`
+-- Table structure for table `newsletter`
 --
 
 CREATE TABLE IF NOT EXISTS `newsletter` (
@@ -347,7 +390,7 @@ CREATE TABLE IF NOT EXISTS `newsletter` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `newsletter`
+-- Dumping data for table `newsletter`
 --
 
 INSERT INTO `newsletter` (`email_nl`, `date_inscrip_nl`) VALUES
@@ -359,7 +402,7 @@ INSERT INTO `newsletter` (`email_nl`, `date_inscrip_nl`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `sous_famill_article`
+-- Table structure for table `sous_famill_article`
 --
 
 CREATE TABLE IF NOT EXISTS `sous_famill_article` (
@@ -371,7 +414,7 @@ CREATE TABLE IF NOT EXISTS `sous_famill_article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `sous_famill_article`
+-- Dumping data for table `sous_famill_article`
 --
 
 INSERT INTO `sous_famill_article` (`code_sous_famill_art`, `nom_sous_famill_art`, `code_famill_art`) VALUES
@@ -401,31 +444,31 @@ INSERT INTO `sous_famill_article` (`code_sous_famill_art`, `nom_sous_famill_art`
 ('09', 'Alliances', '003');
 
 --
--- Contraintes pour les tables exportées
+-- Constraints for dumped tables
 --
 
 --
--- Contraintes pour la table `article`
+-- Constraints for table `article`
 --
 ALTER TABLE `article`
   ADD CONSTRAINT `article_ibfk_1` FOREIGN KEY (`code_sous_famill_art`) REFERENCES `sous_famill_article` (`code_sous_famill_art`),
   ADD CONSTRAINT `article_ibfk_2` FOREIGN KEY (`code_famill_art`) REFERENCES `sous_famill_article` (`code_famill_art`);
 
 --
--- Contraintes pour la table `commande`
+-- Constraints for table `commande`
 --
 ALTER TABLE `commande`
   ADD CONSTRAINT `commande_ibfk_1` FOREIGN KEY (`email_clt`) REFERENCES `client` (`email_clt`);
 
 --
--- Contraintes pour la table `commande_article`
+-- Constraints for table `commande_article`
 --
 ALTER TABLE `commande_article`
   ADD CONSTRAINT `commande_article_ibfk_1` FOREIGN KEY (`id_cmd`) REFERENCES `commande` (`id_cmd`),
   ADD CONSTRAINT `commande_article_ibfk_2` FOREIGN KEY (`code_art`) REFERENCES `article` (`code_art`);
 
 --
--- Contraintes pour la table `sous_famill_article`
+-- Constraints for table `sous_famill_article`
 --
 ALTER TABLE `sous_famill_article`
   ADD CONSTRAINT `sous_famill_article_ibfk_5` FOREIGN KEY (`code_famill_art`) REFERENCES `famill_article` (`code_famill_art`);
