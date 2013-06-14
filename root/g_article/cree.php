@@ -101,7 +101,7 @@ function raz(liste){
 <tr><td colspan="2"><input type="text" name="prix_art" placeholder="Prix TTC" class="global_input" id="sample_input" required="required"/></td></tr>
 <tr><td colspan="2"><input type="text" name="design_courte_art" placeholder="Désignation Courte" class="global_input" id="sample_input" required="required" maxlength="31"/></td></tr><tr><td colspan="2"><textarea name="design_long_art" placeholder="Désignation longue" class="global_input" id="wide_input" required="required" ></textarea></td></tr>
 
-<tr><td colspan="2"><center><input type="submit" value="Cree l'article ?" class="submit_button"/></center></td></tr>
+<tr><td colspan="2"><center><input type="submit" value="Creer l'article ?" class="submit_button"/></center></td></tr>
 </table>
 </form>
 <?php
