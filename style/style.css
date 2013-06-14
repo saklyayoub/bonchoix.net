@@ -92,8 +92,9 @@ r{ color:#ca0003;}
 #footer4{float:left;width:150px;margin-left:80px;/* border-left:solid;border-left-width:1px; border-left-color: #333; */}
 .footer_titre{color:#ca0003;font-size:18px;font-weight:bold; float:left;}
 .footer_sous_titre{ text-align:left;}
-#footer ul 
-{list-style-type:none;float:left;} 
+#footer ul {list-style-type:none;float:left;} 
+
+a:link{text-decoration:none;}
 
 /* Article_Affiche % famill */
 #art_desplay_global_block{margin:15px;}

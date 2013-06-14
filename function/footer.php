@@ -5,10 +5,10 @@
 
 	<div id="footer2">
 		<ul>
-			<li class="footer_sous_titre"><a href="index.php">Accueil</a></li>
-			<li class="footer_sous_titre"><a href="catalogue.php">Notre Catalogue</a></li>
-			<li class="footer_sous_titre"><a href="panier.php">Mon panier</a></li>
-			<li class="footer_sous_titre"><a href="contact.php">Contactez-nous</a></li>
+			<li class="footer_sous_titre"><a href="index.php" class=".lien_sans_style">Accueil</a></li>
+			<li class="footer_sous_titre"><a href="catalogue.php" class=".lien_sans_style">Notre Catalogue</a></li>
+			<li class="footer_sous_titre"><a href="panier.php" class=".lien_sans_style">Mon panier</a></li>
+			<li class="footer_sous_titre"><a href="contact.php" class=".lien_sans_style">Contactez-nous</a></li>
 		</ul>
 	</div>
 	<div id="footer3">
